@@ -32,7 +32,6 @@ export class AppComponent implements OnInit, AfterViewInit {
   scale: number = this.motionDetectorService.getScale(); // capture resolution over motion resolution
   isActivated: boolean = false;
   isTargetInSight: boolean = false;
-  isKnockedOver: boolean = false;
   lostTimeout: any;
 
   motionBoxVisibility: string = "hidden";
@@ -118,7 +117,7 @@ export class AppComponent implements OnInit, AfterViewInit {
   }
 
   capture(payload) {    
-    if (!this.isActivated || this.isKnockedOver) {
+    if (!this.isActivated) {
       return;
     }
     var box = payload.motionBox;
@@ -148,9 +147,4 @@ export class AppComponent implements OnInit, AfterViewInit {
     this.isTargetInSight = false;
   }
 
-  knockOver() {
-    this.isKnockedOver = true;
-    clearTimeout(this.lostTimeout);
-    this.motionBoxVisibility = "hidden";
-  }
 }
