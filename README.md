@@ -17,4 +17,4 @@ Angular motion detection library.
 
 ## More
 
-Check out [ app](https://play.google.com/store/apps/details?id=com.mymobkit&hl=en) to see it in action.
+Check out [https://angular-motion-detector.herokuapp.com/](https://angular-motion-detector.herokuapp.com/) to see it in action.
