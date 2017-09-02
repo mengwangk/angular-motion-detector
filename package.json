@@ -29,7 +29,8 @@
     "webrtc-adapter": "^5.0.1",
     "zone.js": "^0.8.14",
     "@angular/compiler-cli": "^4.2.4",
-    "@angular/language-service": "^4.2.4"
+    "@angular/language-service": "^4.2.4",
+    "typescript": "~2.3.3"
   },
   "devDependencies": {  
     "@types/jasmine": "~2.5.53",
@@ -46,7 +47,6 @@
     "karma-jasmine-html-reporter": "^0.2.2",
     "protractor": "~5.1.2",
     "ts-node": "~3.2.0",
-    "tslint": "~5.3.2",
-    "typescript": "~2.3.3"
+    "tslint": "~5.3.2"   
   }
 }
